@@ -1,0 +1,28 @@
+---
+title: "Traffic Violations"
+description: |
+  Welcome to the website. I hope you enjoy it!
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(distill)
+library(ggthemes)
+```
+```{r}
+rawdata <- read_csv("traffic_violaions.csv")
+```
+
+```{r}
+violationCount <- rawdata |>
+  group_by(violation) |>
+  summarize(count=n()) |>
+  drop_na(violation)
+```
+```{r}
+violationCount |>
+  ggplot(aes(x=violation, y=count, fill=count)) +
+  geom_col()
+```
