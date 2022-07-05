@@ -1,7 +1,11 @@
 ---
 title: "Traffic Violations"
 description: |
-  Welcome to the website. I hope you enjoy it!
+    What a driver should avoid on the road; an examination of traffic infraction records.
+author:
+  - name: Awais Choudhary 
+    url: https://github.com/awaischoudhary
+date: "`r Sys.Date()`"
 site: distill::distill_website
 ---
 
@@ -10,19 +14,4 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(distill)
 library(ggthemes)
-```
-```{r}
-rawdata <- read_csv("traffic_violaions.csv")
-```
-
-```{r}
-violationCount <- rawdata |>
-  group_by(violation) |>
-  summarize(count=n()) |>
-  drop_na(violation)
-```
-```{r}
-violationCount |>
-  ggplot(aes(x=violation, y=count, fill=count)) +
-  geom_col()
 ```

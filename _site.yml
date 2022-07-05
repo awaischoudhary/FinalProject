@@ -1,12 +1,16 @@
 name: "."
-title: "The Final Project"
+title: "Traffic Violations"
 description: |
-  The Final Project
+  What a driver should avoid on the road; an examination of traffic infraction records
 output_dir: "docs"
 navbar:
   right:
     - text: "Home"
       href: index.html
+    - text: "Analysis"
+      href: analysis.html
+    - text: "Sources"
+      href: sources.html
     - text: "About"
       href: about.html
 output: distill::distill_article

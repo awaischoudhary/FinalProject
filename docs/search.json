@@ -1,0 +1,43 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "Some additional details about the website",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2022-07-05T16:50:04-04:00"
+    },
+    {
+      "path": "analysis.html",
+      "title": "Analysis",
+      "description": "A new article created using the Distill format.\n",
+      "author": [],
+      "contents": "\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "last_modified": "2022-07-05T16:50:11-04:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Traffic Violations",
+      "description": "What a driver should avoid on the road; an examination of traffic infraction records.\n",
+      "author": [
+        {
+          "name": "Awais Choudhary",
+          "url": "https://github.com/awaischoudhary"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\n\n\n\n",
+      "last_modified": "2022-07-05T16:50:13-04:00"
+    },
+    {
+      "path": "sources.html",
+      "title": "Sources",
+      "description": "The source of this project can be found here. \n",
+      "author": [],
+      "contents": "\nDistill is a publication format for scientific and technical writing,\nnative to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
+      "last_modified": "2022-07-05T16:50:14-04:00"
+    }
+  ],
+  "collections": []
+}
