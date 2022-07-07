@@ -14,4 +14,12 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(distill)
 library(ggthemes)
+library(knitr)
 ```
+
+
+```{r, echo = FALSE}
+include_graphics("traffic_violations.jpeg")
+```
+## Context
+As a new driver about to acquire my licence, I consider avoiding traffic and road violations to be my top concern. However, certain mistakes and accidents on the road are inevitable, leading to these offences that may result in a police stop. As a result, this research involves an analysis of these violations to determine the reasons for these police stops.

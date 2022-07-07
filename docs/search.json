@@ -6,15 +6,15 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2022-07-05T16:50:04-04:00"
+      "last_modified": "2022-07-05T19:36:03-04:00"
     },
     {
       "path": "analysis.html",
       "title": "Analysis",
-      "description": "A new article created using the Distill format.\n",
+      "description": "An analysis of the traffic infraction records\n",
       "author": [],
-      "contents": "\n\n\n\n\n\n\n\n\n\n\n\n\n",
-      "last_modified": "2022-07-05T16:50:11-04:00"
+      "contents": "\nIntroduction\nWhen drivers break the regulations that govern vehicle operation on\nstreets and highways, they commit a traffic violation. These kind of\ninfractions are extremely widespread. Local police frequently issue\ntraffic infractions, which are then handled by local sections of state\ncourts. Is there, however, a certain racial or age group to whom the\npolice give these offences more frequently? Is there any prejudice in\nwho gets the violations? This study’s analysis will provide answers to\nall of these queries.\nGraphical Analysis\nDifferen Types of Violations\nThere are several forms of offences that might result in a police\nstop. Speeding, moving violations (Reckless Driving, Hit and Run,\nAssaulting another driver, pedestrian, improper turns and lane changes),\nEquipment (Window tint violations, Headlight/taillights out, Loud\nexhaust, Cracked windshield), Registration/Plates, and Seat Belt, are\nthe most common types of violations. The following is a graph\nvisualizing the most common types of violations.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "last_modified": "2022-07-06T18:51:09-04:00"
     },
     {
       "path": "index.html",
@@ -27,8 +27,8 @@
         }
       ],
       "date": "`r Sys.Date()`",
-      "contents": "\n\n\n\n",
-      "last_modified": "2022-07-05T16:50:13-04:00"
+      "contents": "\n\n\n\nContext\nAs a new driver about to acquire my licence, I consider avoiding\ntraffic and road violations to be my top concern. However, certain\nmistakes and accidents on the road are inevitable, leading to these\noffences that may result in a police stop. As a result, this research\ninvolves an analysis of these violations to determine who and why they\nare frequently stopped.\n\n\n\n",
+      "last_modified": "2022-07-05T20:18:53-04:00"
     },
     {
       "path": "sources.html",
@@ -36,7 +36,7 @@
       "description": "The source of this project can be found here. \n",
       "author": [],
       "contents": "\nDistill is a publication format for scientific and technical writing,\nnative to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2022-07-05T16:50:14-04:00"
+      "last_modified": "2022-07-06T23:48:48-04:00"
     }
   ],
   "collections": []

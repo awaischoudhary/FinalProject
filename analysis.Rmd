@@ -10,34 +10,40 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(distill)
 library(ggthemes)
+library(plotly)
+library(gganimate)
 ```
+
+## Introduction
+When drivers break the regulations that govern vehicle operation on streets and highways, they commit a traffic violation. These kind of infractions are extremely widespread. Local police frequently issue traffic infractions, which are then handled by local sections of state courts. Is there, however, a certain racial or age group to whom the police give these offences more frequently? Is there any prejudice in who gets the violations? This study's analysis will provide answers to all of these queries.
+
+## Graphical Analysis
+###  Different Types of Violations
+There are several forms of offences that might result in a police stop. Speeding, moving violations (Reckless Driving, Hit and Run, Assaulting another driver, pedestrian, improper turns and lane changes), Equipment (Window tint violations, Headlight/taillights out, Loud exhaust, Cracked windshield), Registration/Plates, and Seat Belt, are the most common types of violations. The following is a graph visualizing the most common types of violations. 
 
 ```{r}
 rawdata <- read_csv("traffic_violaions.csv")
+
+```
+```{r, violation-plot}
+  violationCount <- read_rds("violationCount.rds")
+  violationCount
+  ggsave("violation-plot.jpg", plot = violationCount)
+```
+
+As depicted in the graph above, speeding is the most common violation by majority, followed by moving violations as the second. The least common traffic violation is a violation related to registration and plates.
+
+```{r}
+  agePlot <- read_rds("age-plot.rds")
+  agePlot
+  ggsave("age-plot.jpg", plot = agePlot)
 ```
 
 ```{r}
-violationCount <- rawdata |>
-  group_by(violation) |>
-  summarize(count=n()) |>
-  drop_na(violation)
+  racePlot <- read_rds("race-plot.rds")
+  racePlot
+  ggsave("race-plot.jpg", plot = racePlot)
 ```
-
-```{r}
-violationCount |>
-  ggplot(aes(x=violation, 
-             y=count, 
-            )) +
-  geom_col(fill="white") +
-  theme(plot.title = element_text(face = "bold"),
-        panel.background = element_rect(fill = "darkgrey"),
-        panel.grid.minor.x = element_blank()) +
-  labs(title="A Comparison Between Different Violations",
-       subtitle="From least to greatest frequency of violations",
-       x="Different Types of Violations",
-       y="Number of Violations")
-```
-
 
 
 
