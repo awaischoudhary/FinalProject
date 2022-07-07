@@ -88,14 +88,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Traffic Violations: Analysis</title>
+  <title>Traffic Violations: Traffic Violation Analysis</title>
 
   <meta property="description" itemprop="description" content="An analysis of the traffic infraction records"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Traffic Violations: Analysis"/>
+  <meta property="og:title" content="Traffic Violations: Traffic Violation Analysis"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="An analysis of the traffic infraction records"/>
   <meta property="og:locale" content="en_US"/>
@@ -103,14 +103,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Traffic Violations: Analysis"/>
+  <meta property="twitter:title" content="Traffic Violations: Traffic Violation Analysis"/>
   <meta property="twitter:description" content="An analysis of the traffic infraction records"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Analysis"]},{"type":"character","attributes":{},"value":["An analysis of the traffic infraction records\n"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Traffic Violation Analysis"]},{"type":"character","attributes":{},"value":["An analysis of the traffic infraction records\n"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2068,6 +2068,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <!--/radix_placeholder_distill-->
   <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+  <script src="site_libs/plotly-binding-4.10.0/plotly.js"></script>
+  <script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+  <script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+  <link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+  <script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+  <link href="site_libs/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet" />
+  <script src="site_libs/plotly-main-2.5.1/plotly-latest.min.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2087,7 +2095,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Analysis","description":"An analysis of the traffic infraction records","authors":[]}
+{"title":"Traffic Violation Analysis","description":"An analysis of the traffic infraction records","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2111,7 +2119,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Analysis</h1>
+<h1>Traffic Violation Analysis</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 <p><p>An analysis of the traffic infraction records</p></p>
@@ -2128,8 +2136,12 @@ courts. Is there, however, a certain racial or age group to whom the
 police give these offences more frequently? Is there any prejudice in
 who gets the violations? This study’s analysis will provide answers to
 all of these queries.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="police-sirens.jpeg" /><!-- --></p>
+</div>
 <h2 id="graphical-analysis">Graphical Analysis</h2>
-<h3 id="differen-types-of-violations">Differen Types of Violations</h3>
+<h1 id="different-types-of-violations">Different Types of
+Violations</h1>
 <p>There are several forms of offences that might result in a police
 stop. Speeding, moving violations (Reckless Driving, Hit and Run,
 Assaulting another driver, pedestrian, improper turns and lane changes),
@@ -2141,17 +2153,71 @@ visualizing the most common types of violations.</p>
 
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="analysis_files/figure-html5/violation-plot-1.png" width="624" /></p>
+<p><img src="analysis_files/figure-html5/violation-plot-1.png" width="624" style="display: block; margin: auto;" /></p>
 </div>
+<p>As depicted in the graph above, speeding is the most common violation
+by majority. The second most common violation is the moving violation.
+The least common traffic violation is a violation related to
+registration and plates.</p>
+<h1 id="at-what-age-are-the-violations-most-common">At What Age Are The
+Violations Most Common</h1>
+<p>The violations shown above can occur to anyone at anytime. However,
+there are certain aspects that play a role into which groups are more
+common to face violations. For instance less experienced drivers tend to
+face more mistakes on the road than someone who has much experience.
+Therefore, we will be analyzing the affects of age groups to the chance
+of facing a violation. The following graph is a visualization of the
+number of violations per age.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="analysis_files/figure-html5/unnamed-chunk-2-1.png" width="624" /></p>
+<div id="htmlwidget-6e08fa2037b5a4979e79" style="width:624px;height:384px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6e08fa2037b5a4979e79">{"x":{"data":[{"x":[15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,86,88],"y":[5,26,380,1146,1992,2310,2343,2297,2130,2051,1856,1763,1613,1521,1385,1315,1201,1158,1042,1004,1031,991,966,953,959,995,942,908,960,895,842,849,797,837,668,770,671,671,566,536,489,405,410,362,345,291,266,233,199,175,144,125,90,86,51,58,41,45,33,33,24,18,17,12,13,10,5,8,2,3,6,2],"text":"","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":44.0182648401827,"r":7.30593607305936,"b":40.4383561643836,"l":48.9497716894977},"plot_bgcolor":"rgba(169,169,169,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"<b> Violations by Age <\/b>","font":{"color":"rgba(0,0,0,1)","family":"","size":17.5342465753425},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[11.35,91.65],"tickmode":"array","ticktext":["15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90"],"tickvals":[15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90],"categoryorder":"array","categoryarray":["15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Age of Drivers","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-115.05,2460.05],"tickmode":"array","ticktext":["0","500","1000","1500","2000"],"tickvals":[1.4210854715202e-14,500,1000,1500,2000],"categoryorder":"array","categoryarray":["0","500","1000","1500","2000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Number of Violations","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"c2075fa487dc":{"x":{},"y":{},"type":"scatter"}},"cur_data":"c2075fa487dc","visdat":{"c2075fa487dc":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
+<p>The x-axis in the graph above ranges from 16 (the youngest age to
+obtain a driver’s licence) to roughly 88 years of age. The age with the
+most infractions is around <strong>21 years old</strong>, with
+approximately <strong>2400 violations</strong>. It is also clear that
+the number of violations climbs exponentially from 16 to the peak of the
+graph at 21 years of age. This illustrates how young drivers with little
+experience are more likely to get penalised. The reason for this is that
+young drivers are more prone than older drivers to underestimate or fail
+to detect potentially hazardous conditions. Young drivers are also more
+likely than adults to make important decision errors, which can result
+in serious violations. As a result, the cost of automobile insurance is
+higher for younger drivers.</p>
+<h1 id="what-race-faces-more-violations">What Race Faces More
+Violations</h1>
+<p>As previously stated, several factors influence who is subjected to
+these infractions. However, before reaching any conclusions, a date
+analysis is necessary. As a result, I’ll be evaluating the violations by
+race in this dataset to determine if one race has more violations than
+another. However, the findings may not be as predicted because the
+dataset may be based on a location of a certain race with higher
+populations, skewing the graph.</p>
 <div class="layout-chunk" data-layout="l-body">
-
+<p><img src="analysis_files/figure-html5/unnamed-chunk-4-1.png" width="624" style="display: block; margin: auto;" /></p>
 </div>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="analysis_files/figure-html5/unnamed-chunk-4-1.png" width="624" /></p>
-</div>
+<p>As indicated in the graph, the white race has the most infractions,
+accounting for around <strong>71%</strong> of all violations. It is also
+clear that around <strong>12%</strong> of the violations are committed
+by the black race, with the remaining <strong>17%</strong> committed by
+people of other races such as Hispanic, Asian, and etc. As previously
+noted, this has little value because the location where this data was
+collected may have a concentrated white population, which completely
+affects the results. As a result, while the white race is revealed to
+have the highest number of infractions, this does not imply anything
+specific.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>We can draw certain inferences from the analysis of traffic
+violations. It is evident that the most significant and often occurring
+violation on the roadways is <strong>speeding</strong>. Speeding
+infractions were clearly revealed to be the most common in the sample in
+graph 1. Second, it is clear from graph 2 that the age with the most
+infractions is <strong>21 years old</strong>. The graph also showed that
+teenage drivers were more likely to commit these offences than older and
+more experienced drivers. Finally, graph 3 demonstrates that the
+<strong>white</strong> race is implicated in the biggest number of
+violations in the dataset, but this is not significant because the
+dataset may have come from a densely white inhabited place.</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

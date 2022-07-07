@@ -1,10 +1,19 @@
 ---
-title: "About this site"
+title: "Awais Choudhary"
 description: |
-  Some additional details about the website
+ Additional Information About The Website
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## About me
+My name is **Awais Choudhary**. I am a senior student at White Oaks Secondary School located in Ontario, Canada. I am passionate about Computer Science and Engineering.  
+
+## About the Project
+***An overview of the Project:*** <br /> As a new driver who is still learning on the road, I've realised that driving safely is the number one priority. The issue of traffic offences sparked my curiosity since it was so pertinent. As a result, I decided to develop the [*Traffic Violations*](index.html) project to investigate which violations are most widespread, among which age groups and ethnicity. Check out the [analysis page](analysis.html) for the analysis and [sources page](sources.html) to see the original data.
+
+## Contact information
+* Email: awais.chdhary@gmail.com
+* GitHub: https://github.com/awaischoudhary

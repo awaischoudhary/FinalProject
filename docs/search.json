@@ -2,19 +2,19 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this site",
-      "description": "Some additional details about the website",
+      "title": "Awais Choudhary",
+      "description": "Additional Information About The Website",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2022-07-05T19:36:03-04:00"
+      "contents": "\nAbout me\nMy name is Awais Choudhary. I am a senior student at\nWhite Oaks Secondary School located in Ontario, Canada. I am passionate\nabout Computer Science and Engineering.\nAbout the Project\nAn overview of the Project:  As a new\ndriver who is still learning on the road, I’ve realised that driving\nsafely is the number one priority. The issue of traffic offences sparked\nmy curiosity since it was so pertinent. As a result, I decided to\ndevelop the Traffic Violations project\nto investigate which violations are most widespread, among which age\ngroups and ethnicity. Check out the analysis\npage for the analysis and sources page to\nsee the original data.\nContact information\nEmail: awais.chdhary@gmail.com\nGitHub: https://github.com/awaischoudhary\n\n\n\n",
+      "last_modified": "2022-07-07T18:06:50-04:00"
     },
     {
       "path": "analysis.html",
-      "title": "Analysis",
+      "title": "Traffic Violation Analysis",
       "description": "An analysis of the traffic infraction records\n",
       "author": [],
-      "contents": "\nIntroduction\nWhen drivers break the regulations that govern vehicle operation on\nstreets and highways, they commit a traffic violation. These kind of\ninfractions are extremely widespread. Local police frequently issue\ntraffic infractions, which are then handled by local sections of state\ncourts. Is there, however, a certain racial or age group to whom the\npolice give these offences more frequently? Is there any prejudice in\nwho gets the violations? This study’s analysis will provide answers to\nall of these queries.\nGraphical Analysis\nDifferen Types of Violations\nThere are several forms of offences that might result in a police\nstop. Speeding, moving violations (Reckless Driving, Hit and Run,\nAssaulting another driver, pedestrian, improper turns and lane changes),\nEquipment (Window tint violations, Headlight/taillights out, Loud\nexhaust, Cracked windshield), Registration/Plates, and Seat Belt, are\nthe most common types of violations. The following is a graph\nvisualizing the most common types of violations.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-      "last_modified": "2022-07-06T18:51:09-04:00"
+      "contents": "\nIntroduction\nWhen drivers break the regulations that govern vehicle operation on\nstreets and highways, they commit a traffic violation. These kind of\ninfractions are extremely widespread. Local police frequently issue\ntraffic infractions, which are then handled by local sections of state\ncourts. Is there, however, a certain racial or age group to whom the\npolice give these offences more frequently? Is there any prejudice in\nwho gets the violations? This study’s analysis will provide answers to\nall of these queries.\n\n\n\nGraphical Analysis\nDifferent Types of\nViolations\nThere are several forms of offences that might result in a police\nstop. Speeding, moving violations (Reckless Driving, Hit and Run,\nAssaulting another driver, pedestrian, improper turns and lane changes),\nEquipment (Window tint violations, Headlight/taillights out, Loud\nexhaust, Cracked windshield), Registration/Plates, and Seat Belt, are\nthe most common types of violations. The following is a graph\nvisualizing the most common types of violations.\n\n\n\n\n\n\nAs depicted in the graph above, speeding is the most common violation\nby majority. The second most common violation is the moving violation.\nThe least common traffic violation is a violation related to\nregistration and plates.\nAt What Age Are The\nViolations Most Common\nThe violations shown above can occur to anyone at anytime. However,\nthere are certain aspects that play a role into which groups are more\ncommon to face violations. For instance less experienced drivers tend to\nface more mistakes on the road than someone who has much experience.\nTherefore, we will be analyzing the affects of age groups to the chance\nof facing a violation. The following graph is a visualization of the\nnumber of violations per age.\n\n\n\nThe x-axis in the graph above ranges from 16 (the youngest age to\nobtain a driver’s licence) to roughly 88 years of age. The age with the\nmost infractions is around 21 years old, with\napproximately 2400 violations. It is also clear that\nthe number of violations climbs exponentially from 16 to the peak of the\ngraph at 21 years of age. This illustrates how young drivers with little\nexperience are more likely to get penalised. The reason for this is that\nyoung drivers are more prone than older drivers to underestimate or fail\nto detect potentially hazardous conditions. Young drivers are also more\nlikely than adults to make important decision errors, which can result\nin serious violations. As a result, the cost of automobile insurance is\nhigher for younger drivers.\nWhat Race Faces More\nViolations\nAs previously stated, several factors influence who is subjected to\nthese infractions. However, before reaching any conclusions, a date\nanalysis is necessary. As a result, I’ll be evaluating the violations by\nrace in this dataset to determine if one race has more violations than\nanother. However, the findings may not be as predicted because the\ndataset may be based on a location of a certain race with higher\npopulations, skewing the graph.\n\n\n\nAs indicated in the graph, the white race has the most infractions,\naccounting for around 71% of all violations. It is also\nclear that around 12% of the violations are committed\nby the black race, with the remaining 17% committed by\npeople of other races such as Hispanic, Asian, and etc. As previously\nnoted, this has little value because the location where this data was\ncollected may have a concentrated white population, which completely\naffects the results. As a result, while the white race is revealed to\nhave the highest number of infractions, this does not imply anything\nspecific.\nConclusion\nWe can draw certain inferences from the analysis of traffic\nviolations. It is evident that the most significant and often occurring\nviolation on the roadways is speeding. Speeding\ninfractions were clearly revealed to be the most common in the sample in\ngraph 1. Second, it is clear from graph 2 that the age with the most\ninfractions is 21 years old. The graph also showed that\nteenage drivers were more likely to commit these offences than older and\nmore experienced drivers. Finally, graph 3 demonstrates that the\nwhite race is implicated in the biggest number of\nviolations in the dataset, but this is not significant because the\ndataset may have come from a densely white inhabited place.\n\n\n\n",
+      "last_modified": "2022-07-07T18:06:56-04:00"
     },
     {
       "path": "index.html",
@@ -27,16 +27,16 @@
         }
       ],
       "date": "`r Sys.Date()`",
-      "contents": "\n\n\n\nContext\nAs a new driver about to acquire my licence, I consider avoiding\ntraffic and road violations to be my top concern. However, certain\nmistakes and accidents on the road are inevitable, leading to these\noffences that may result in a police stop. As a result, this research\ninvolves an analysis of these violations to determine who and why they\nare frequently stopped.\n\n\n\n",
-      "last_modified": "2022-07-05T20:18:53-04:00"
+      "contents": "\n\n\n\nContext\nAs a new driver about to acquire my licence, I consider avoiding\ntraffic and road violations to be my top concern. However, certain\nmistakes and accidents on the road are inevitable, leading to these\noffences that may result in a police stop. As a result, this research\ninvolves an analysis of these violations to determine the reasons for\nthese police stops.\n\n\n\n",
+      "last_modified": "2022-07-07T18:06:58-04:00"
     },
     {
       "path": "sources.html",
       "title": "Sources",
-      "description": "The source of this project can be found here. \n",
+      "description": "The dataset source of this project can be found here. \n",
       "author": [],
-      "contents": "\nDistill is a publication format for scientific and technical writing,\nnative to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2022-07-06T23:48:48-04:00"
+      "contents": "\nThe dataset for this project was from Kaggle by Shubam Sumbria (Sumbria 2022)\nDistill is a publication format for scientific and technical writing,\nnative to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\nSumbria, Shubam. 2022. “Traffic and Drugs Related Violations\nDataset.”\n\n\n\n\n",
+      "last_modified": "2022-07-07T18:06:59-04:00"
     }
   ],
   "collections": []

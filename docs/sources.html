@@ -86,31 +86,54 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
+<style>
+  div.csl-bib-body { }
+  div.csl-entry {
+    clear: both;
+    }
+  .hanging div.csl-entry {
+    margin-left:2em;
+    text-indent:-2em;
+  }
+  div.csl-left-margin {
+    min-width:2em;
+    float:left;
+  }
+  div.csl-right-inline {
+    margin-left:2em;
+    padding-left:1em;
+  }
+  div.csl-indent {
+    margin-left: 2em;
+  }
+</style>
 
   <!--radix_placeholder_meta_tags-->
   <title>Traffic Violations: Sources</title>
 
-  <meta property="description" itemprop="description" content="The source of this project can be found here."/>
+  <meta property="description" itemprop="description" content="The dataset source of this project can be found here."/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Traffic Violations: Sources"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="The source of this project can be found here."/>
+  <meta property="og:description" content="The dataset source of this project can be found here."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Traffic Violations"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Traffic Violations: Sources"/>
-  <meta property="twitter:description" content="The source of this project can be found here."/>
+  <meta property="twitter:description" content="The dataset source of this project can be found here."/>
 
   <!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=Traffic and drugs related violations dataset;citation_publication_date=2022;citation_author=Shubam Sumbria"/>
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Sources"]},{"type":"character","attributes":{},"value":["The source of this project can be found here. \n"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output","bibliography"]}},"value":[{"type":"character","attributes":{},"value":["Sources"]},{"type":"character","attributes":{},"value":["The dataset source of this project can be found here. \n"]},{"type":"character","attributes":{},"value":["distill::distill_article"]},{"type":"character","attributes":{},"value":["bibliography.bib"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2087,7 +2110,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Sources","description":"The source of this project can be found here.","authors":[]}
+{"title":"Sources","description":"The dataset source of this project can be found here.","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2114,11 +2137,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Sources</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>The source of this project can be found here.</p></p>
+<p><p>The dataset source of this project can be found here.</p></p>
 </div>
 
 
 <div class="d-article">
+<p>The dataset for this project was from Kaggle by Shubam Sumbria <span
+class="citation" data-cites="dataset">(<a href="#ref-dataset"
+role="doc-biblioref">Sumbria 2022</a>)</span></p>
 <p>Distill is a publication format for scientific and technical writing,
 native to the web.</p>
 <p>Learn more about using Distill for R Markdown at <a
@@ -2126,6 +2152,13 @@ href="https://rstudio.github.io/distill"
 class="uri">https://rstudio.github.io/distill</a>.</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="doc-bibliography">
+<div id="ref-dataset" class="csl-entry" role="doc-biblioentry">
+Sumbria, Shubam. 2022. <span>“Traffic and Drugs Related Violations
+Dataset.”</span>
+</div>
+</div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2137,7 +2170,10 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+<h3 id="references">References</h3>
+<div id="references-listing"></div>
+</div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

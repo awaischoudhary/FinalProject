@@ -17,7 +17,6 @@ library(ggthemes)
 library(knitr)
 ```
 
-
 ```{r, echo = FALSE}
 include_graphics("traffic_violations.jpeg")
 ```

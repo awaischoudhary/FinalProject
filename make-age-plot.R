@@ -20,8 +20,10 @@ agePlot <- rawdata |>
   labs(title="Violations by Age",
        subtitle="At what age are these violations most frequent",
        x="Age of Drivers",
-       y="Number of Violations") 
-  ggplotly(agePlot, tooltip="text") 
+       y="Number of Violations") +
+  scale_x_continuous(breaks = c(0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90))
 
-  write_rds(agePlot, "age-plot.rds")
+agePlot <- ggplotly(agePlot, tooltip="text") 
+
+write_rds(agePlot, "age-plot.rds")
   

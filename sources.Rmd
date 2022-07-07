@@ -1,13 +1,15 @@
 ---
 title: "Sources"
 description: |
-  The source of this project can be found here. 
+  The dataset source of this project can be found here. 
 output: distill::distill_article
+bibliography: bibliography.bib
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+The dataset for this project was from Kaggle by Shubam Sumbria [@dataset]
 
 Distill is a publication format for scientific and technical writing, native to the web. 
 
